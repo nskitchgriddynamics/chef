@@ -1,0 +1,10 @@
+<html>
+  <body>
+<h1>
+ <%= node['hostname'] %>
+      <%= node['platform'] %> - <%= node['platform_version'] %>
+      <%= node['memory']['total'] %> RAM
+      <%= node['cpu']['total'] %> CPUs 
+</h1>
+  </body>
+</html>
