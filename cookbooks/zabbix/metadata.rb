@@ -1,0 +1,7 @@
+name 'zabbix'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures zabbix'
+long_description 'Installs/Configures zabbix'
+version '0.1.0'
