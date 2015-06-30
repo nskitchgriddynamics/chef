@@ -1,4 +1,3 @@
-{
-  "zabbix_config": "value1",
-}
+# successfully used -j option of chef-client to point to this file and override cookbook's attributes.
 
+{   "zabbix": { "script_dir":"/etc/zabbix/nickTemp2/"},   "run_list": [ "recipe[zabbix]" ] }
