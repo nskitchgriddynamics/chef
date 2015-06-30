@@ -9,7 +9,7 @@ yum_package "zabbix-agent" do
 end
 
 service "zabbix-agent" do
-	action [:enable, :restart]
+	action [:enable, :start]
 end
 
 yum_package "zabbix-get" do 
@@ -17,12 +17,12 @@ yum_package "zabbix-get" do
 end
 
 # this will hold file counts
-directory "#{node[:script_dir]}" do 
+directory "#{node[:zabbix][:script_dir]}" do 
   recursive true
 end
 
-template "#{node[:config_file]}" do
-  path "#{node[:config_file]}"
+template "#{node[:zabbix][:config_file]}" do
+  path "#{node[:zabbix][:config_file]}"
   source "zabbix_agentd.conf.erb"
   owner "zabbix"
   group "zabbix"

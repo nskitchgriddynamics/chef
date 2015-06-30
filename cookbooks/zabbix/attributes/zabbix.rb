@@ -1,6 +1,5 @@
 default['zabbix']['config_file'] = '/etc/zabbix/zabbix_agentd.conf'
-default['zabbix']['user_param1'] = 'UserParameter=nickTest.nickCount,ls -l /etc/zabbix/nickTemp/ | wc -l'
+default['zabbix']['scan_dir'] = '/tmp/nickTemp2/'
+default['zabbix']['user_param1'] = 'UserParameter=nickTest.nickCount,ls -l '
+default['zabbix']['user_param2'] = ' | wc -l'
 default['zabbix']['script_dir'] = '/etc/zabbix/nickTemp/'
-
-
-   
