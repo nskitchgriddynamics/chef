@@ -282,11 +282,6 @@ Include=/etc/zabbix/zabbix_agentd.d/
 #<%= node[:zabbix][:user_param1] << node[:zabbix][:scan_dir] << node[:zabbix][:user_param2] %>
 #<%= "#{node[:zabbix][:user_param1]} #{node[:zabbix][:scan_dir]} #{node[:zabbix][:user_param2]}" %>
 
-# This should be populated from the template provider in /providers/agent.rb
-<%= 'UserParameter=' << @item <<',ls -l ' << @app_dir << ' | wc -l' %>
-
-
-
 ####### LOADABLE MODULES #######
 
 ### Option: LoadModulePath

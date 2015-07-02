@@ -6,9 +6,9 @@
 
 
 
-zabbix_agent "zabbix_agent2" do
+zabbix_agent "zabbix_agent22" do
 	app_dir "/tmp/nickTest_agent1"
-    item "nickTest.nickCount"
+    item "nickTest.nickCount2"
     action :create
 end 
 
@@ -17,7 +17,7 @@ yum_package "zabbix-agent" do
 end
 
 service "zabbix-agent" do
-	action [:enable, :start]
+	action [:enable, :restart]
 end
 
 yum_package "zabbix-get" do 
