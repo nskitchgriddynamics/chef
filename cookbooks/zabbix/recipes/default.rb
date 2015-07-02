@@ -6,9 +6,9 @@
 
 
 
-zabbix_agent "zabbix_agent22" do
+zabbix_agent "zabbix_agent223" do
 	app_dir "/tmp/nickTest_agent1"
-    item "nickTest.nickCount2"
+    item "nickTest.nickCount4"
     action :create
 end 
 
